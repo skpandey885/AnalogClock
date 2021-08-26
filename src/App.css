@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+
+*{
+  padding: 0;
+  margin: 0;
+ }
+
+#box{
+  height: 100vh;
+  width: 100vw; 
+  background: url("https://source.unsplash.com/user/erondu/1600x900");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+       .clock{
+           position: relative;
+           margin: auto;
+           height: 40vw;
+           width: 40vw;
+           top: 5.5rem;
+           background: url('./clock.png') no-repeat;
+           background-size: 100%;
+           border-radius:50%;
+           box-shadow: 0 0 10px 2px rgb(240, 240, 240);
+   }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+   .display{
+      height: 2rem;
+      width: 20rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+      border: 2px solid black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: 8rem;
+      background-color: rgba(240, 248, 255, 0.192);
+   }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+            .time{
+                position:absolute;
+                border: 2px solid rgb(0, 0, 0);
+                transform-origin: bottom;
+            }
+            
+            #hour{
+               height: 18%;
+               top: 31%;
+               left: 49.59%;
+            }
+            #minute{
+               height: 23%;
+               top: 26%;
+               left: 49.59%;
+             
+            }
+            #second{
+            height: 29%;
+            left: 49.59%;
+            top: 20%;
+        }
+
+
+
+
+   
